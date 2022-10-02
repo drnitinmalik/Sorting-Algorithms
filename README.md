@@ -6,6 +6,8 @@ Sorting means to arrange a following set of numbers in ascending/increasing/non 
 
 # Various Sorting Algorithms are as follows:
 ## Bubble Sort
+<img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" />
+<br>
 Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort. Bubble sort can be practical if the input is in mostly sorted order with some out-of-order elements nearly in position.
 
 Time complexity analysis:
@@ -20,6 +22,7 @@ Time complexity analysis:
 
 
 ## Selection Sort
+<img align="center" height="200px" width="350px" alt="GIF" src="https://elgorithmi.com/wp-content/uploads/2020/11/selection-sort-animation.gif" />
 Selection sort is a sorting algorithm, specifically an in-place comparison sort. It has O(n2) time complexity, making it inefficient on large lists, and generally performs worse than the similar insertion sort. Selection sort is noted for its simplicity, and it has performance advantages over more complicated algorithms in certain situations, particularly where auxiliary memory is limited.
 
 The algorithm divides the input list into two parts: the sublist of items already sorted, which is built up from left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.
@@ -36,6 +39,7 @@ Time complexity analysis:
 
 
 ## Insertion Sort
+<img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif" />
 Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
 Insertion sort iterates, consuming one input element each repetition, and growing a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
 
@@ -113,6 +117,7 @@ Time complexity analysis:
 
 
 ## Quick Sort
+<img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif" />
 Quicksort (sometimes called partition-exchange sort) is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order. When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort.
 
 Quicksort is a comparison sort, meaning that it can sort items of any type for which a "less-than" relation (formally, a total order) is defined. In efficient implementations it is not a stable sort, meaning that the relative order of equal sort items is not preserved. Quicksort can operate in-place on an array, requiring small additional amounts of memory to perform the sorting. It is very similar to selection sort, except that it does not always choose worst-case partition.
@@ -338,6 +343,9 @@ Time complexity analysis:
 ## Stooge Sort
 
 The Stooge sort is a recursive sorting algorithm. It is defined for ascending order sorting.Stooge sort is a recursive sorting algorithm. It is notable for its exceptionally bad time complexity of O(n^(log 3 / log 1.5 ) = O(n2.7095...). The running time of the algorithm is thus slower compared to reasonable sorting algorithms, and is slower than Bubble sort, a canonical example of a fairly inefficient sort. It is however more efficient than Slowsort
+
+## Merge Sort
+<img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" />
 
 ## 3 Way Merge Sort
 Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.
