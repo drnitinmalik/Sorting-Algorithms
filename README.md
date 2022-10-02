@@ -55,7 +55,7 @@ Time complexity analysis:
 
 
 ## Counting Sort
-<img align="center" height="200px" width="350px" alt="GIF" src="https://commons.wikimedia.org/wiki/File:Counting_Sort_Animation.gif" />
+<img align="center" height="200px" width="320px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/6/60/Counting_Sort_Animation.gif" />
 Counting sort is an algorithm for sorting a collection of objects according to keys that are small integers; that is, it is an integer sorting algorithm. It operates by counting the number of objects that have each distinct key value, and using arithmetic on those counts to determine the positions of each key value in the output sequence. Its running time is linear in the number of items and the difference between the maximum and minimum key values, so it is only suitable for direct use in situations where the variation in keys is not significantly greater than the number of items. However, it is often used as a subroutine in another sorting algorithm, radix sort, that can handle larger keys more efficiently.
 
 Time complexity analysis:
@@ -84,7 +84,7 @@ Time complexity analysis:
 
 
 ## Heap Sort (Improved selection sort)
-<img align="center" height="200px" width="350px" alt="GIF" src="https://commons.wikimedia.org/wiki/File:Heap_sort_example.gif" />
+<img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Heap_sort_example.gif" />
 Heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like that algorithm, it divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region. The improvement consists of the use of a heap data structure rather than a linear-time search to find the maximum.
 
 The heapsort algorithm involves preparing the list by first turning it into a max heap. The algorithm then repeatedly swaps the first value of the list with the last value, decreasing the range of values considered in the heap operation by one, and sifting the new first value into its position in the heap. This repeats until the range of considered values is one value in length.
@@ -165,7 +165,7 @@ Time complexity analysis:
 
 
 ## Bogo/Permutation/Shotgun/Monkey Sort
-<img align="center" height="200px" width="350px" alt="GIF" src="https://commons.wikimedia.org/wiki/File:Bogo_sort_animation.gif" />
+<img align="center" height="200px" width="237px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Bogo_sort_animation.gif" />
 Also known as Stupid Sort/Slowsort, Bogosort randomly generates permutations of the input and checks if it is sorted until it generates one that happens to be sorted by chance. Not meant to be an efficient sort, Bogosort is largely used for educational purposes and for comparison to actual sorting algorithms for contrast. It has a best case of O(n) where the list is already sorted, an average performance of O((n+1)!) and an unbounded worst case performance.
 
 Time complexity analysis:
@@ -196,7 +196,7 @@ Time complexity analysis:
 
 
 ## Shell Sort
-<img align="center" height="200px" width="350px" alt="GIF" src="https://commons.wikimedia.org/wiki/File:Sorting_shellsort_anim2.gif" />
+<img align="center" height="200px" width="257px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/6/61/Sorting_shellsort_anim2.gif" />
 Shellsort is an in-place comparison sort. It can be seen as either a generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort).The method starts by sorting pairs of elements far apart from each other, then progressively reducing the gap between elements to be compared. Starting with far apart elements, it can move some out-of-place elements into position faster than a simple nearest neighbor exchange. Donald Shell published the first version of this sort in 1959.The running time of Shellsort is heavily dependent on the gap sequence it uses. For many practical variants, determining their time complexity remains an open problem.
 
 Time complexity analysis:
@@ -240,7 +240,7 @@ Time complexity analysis:
 
 
 ## Gnome sort (similar to insertion sort)
-<img align="center" height="200px" width="350px" alt="GIF" src="https://commons.wikimedia.org/wiki/File:Gnome_Sort_Animation.gif" />
+<img align="center" height="200px" width="320px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Gnome_Sort_Animation.gif" />
 Gnome sort is a sorting algorithm which is similar to insertion sort, except that moving an element to its proper place is accomplished by a series of swaps, similar to a bubble sort. It is conceptually simple, requiring no nested loops. The average, or expected, running time is O(n2) but tends towards O(n) if the list is initially almost sorted.
 
 The algorithm always finds the first place where two adjacent elements are in the wrong order and swaps them. It takes advantage of the fact that performing a swap can introduce a new out-of-order adjacent pair next to the previously swapped elements. It does not assume that elements forward of the current position are sorted, so it only needs to check the position directly previous to the swapped elements.
@@ -257,8 +257,8 @@ Time complexity analysis:
 
 
 ## Comb sort (Improved bubble sort)
-<img align="center" height="200px" width="350px" alt="GIF" src="https://commons.wikimedia.org/wiki/File:Comb_sort_demo.gif" />
-Comb sort improves on bubble sort. The basic idea is to eliminate turtles, or small values near the end of the list, since in a bubble sort these slow the sorting down tremendously. Rabbits, large values around the beginning of the list, do not pose a problem in bubble sort.
+<img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Comb_sort_demo.gif" />
+The basic idea is to eliminate turtles, or small values near the end of the list, since in a bubble sort these slow the sorting down tremendously. Rabbits, large values around the beginning of the list, do not pose a problem in bubble sort.
 
 In bubble sort, when any two elements are compared, they always have a gap (distance from each other) of 1. The basic idea of comb sort is that the gap can be much more than 1. The inner loop of bubble sort, which does the actual swap, is modified such that gap between swapped elements goes down (for each iteration of outer loop) in steps of a "shrink factor" k: \[ n/k, n/k<sup>2</sup>, n/k<sup>3</sup>, ..., 1 \].
 
@@ -347,7 +347,7 @@ Time complexity analysis:
 |No|No|
 
 ## Stooge Sort
-<img align="center" height="200px" width="350px" alt="GIF" src="https://commons.wikimedia.org/wiki/File:Sorting_stoogesort_anim.gif" />
+<img align="center" height="200px" width="344px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Sorting_stoogesort_anim.gif" />
 The Stooge sort is a recursive sorting algorithm. It is defined for ascending order sorting. Stooge sort is a recursive sorting algorithm. It is notable for its exceptionally bad time complexity of O(n^(log 3 / log 1.5 ) = O(n2.7095...). The running time of the algorithm is thus slower compared to reasonable sorting algorithms, and is slower than Bubble sort, a canonical example of a fairly inefficient sort. It is however more efficient than Slowsort
 
 ## 3 Way Merge Sort
@@ -355,4 +355,4 @@ Merge sort involves recursively splitting the array into 2 parts, sorting and fi
 Merge sort recursively breaks down the arrays to subarrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.
 
 ## Contributing
-To start contributing, check out [CONTRIBUTING.md](https://github.com/diptangsu/Sorting-Algorithms/blob/master/CONTRIBUTING.md). New contributors are always welcome to support this project. Check out issues labelled as `Hacktoberfest` if you are up for some grabs! :)
+To start contributing, check out [CONTRIBUTING.md](https://github.com/diptangsu/Sorting-Algorithms/blob/master/CONTRIBUTING.md). New contributors are always welcome to support this project.
