@@ -5,10 +5,10 @@ Sorting means to arrange a following set of numbers in ascending/increasing/non 
 [![DeepSource](https://deepsource.io/gh/diptangsu/Sorting-Algorithms.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/diptangsu/Sorting-Algorithms/?ref=repository-badge)
 
 # Various Sorting Algorithms are as follows:
-## Bubble/Sinking Sort
+## 1 Bubble/Sinking Sort
 <img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" />
 <br>
-Bubble sort algorithm repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort. Bubble sort can be practical if the input is in mostly sorted order with some out-of-order elements nearly in position.
+Bubble sort algorithm repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list. Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort. Bubble sort can be practical if the input is in mostly sorted order with some out-of-order elements nearly in position. In-place means we need not compare the two data values to sort them.
 
 Time complexity analysis:
 
@@ -21,7 +21,7 @@ Time complexity analysis:
 |Yes|Yes|
 
 
-## Selection Sort
+## 2 Selection Sort
 <img align="center" height="200px" width="350px" alt="GIF" src="https://elgorithmi.com/wp-content/uploads/2020/11/selection-sort-animation.gif" />
 Selection sort is a sorting algorithm, specifically an in-place comparison sort. It has O(n2) time complexity, making it inefficient on large lists, and generally performs worse than the similar insertion sort. Selection sort is noted for its simplicity, and it has performance advantages over more complicated algorithms in certain situations, particularly where auxiliary memory is limited.
 
@@ -38,7 +38,7 @@ Time complexity analysis:
 |Yes|No|
 
 
-## Insertion Sort
+## 3 Insertion Sort
 <img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif" />
 Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
 Insertion sort iterates, consuming one input element each repetition, and growing a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
@@ -54,9 +54,9 @@ Time complexity analysis:
 |Yes|Yes|
 
 
-## Counting Sort
+## 4 Counting Sort
 <img align="center" height="200px" width="320px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/6/60/Counting_Sort_Animation.gif" />
-Counting sort is an algorithm for sorting a collection of objects according to keys that are small integers; that is, it is an integer sorting algorithm. It operates by counting the number of objects that have each distinct key value, and using arithmetic on those counts to determine the positions of each key value in the output sequence. Its running time is linear in the number of items and the difference between the maximum and minimum key values, so it is only suitable for direct use in situations where the variation in keys is not significantly greater than the number of items. However, it is often used as a subroutine in another sorting algorithm, radix sort, that can handle larger keys more efficiently.
+Counting sort is an algorithm for sorting a collection of objects according to keys that are small integers; that is, it is an integer sorting algorithm. It operates by counting the number of objects that have each distinct key value, and using arithmetic on those counts to determine the positions of each key value in the output sequence. Its running time is linear in the number of items and the difference between the maximum and minimum key values, so it is only suitable for direct use in situations where the variation in keys is not significantly greater than the number of items. However, it is often used as a subroutine in another sorting algorithm, radix sort, that can handle larger keys more efficiently. k stands for the length of the range of possible key values.
 
 Time complexity analysis:
 
@@ -69,7 +69,7 @@ Time complexity analysis:
 |No|Yes|
 
 
-## Cycle Sort
+## 5 Cycle Sort
 Cycle sort is an in-place, unstable sorting algorithm, a comparison sort that is theoretically optimal in terms of the total number of writes to the original array, unlike any other in-place sorting algorithm. It is based on the idea that the permutation to be sorted can be factored into cycles, which can individually be rotated to give a sorted result.
 
 Time complexity analysis:
@@ -83,7 +83,7 @@ Time complexity analysis:
 |Yes|No|
 
 
-## Heap Sort (Improved selection sort)
+## 6 Heap Sort (Improved selection sort)
 <img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Heap_sort_example.gif" />
 Heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like that algorithm, it divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region. The improvement consists of the use of a heap data structure rather than a linear-time search to find the maximum.
 
@@ -100,7 +100,7 @@ Time complexity analysis:
 |Yes|No|
 
 
-## Merge Sort
+## 7 Merge Sort
 <img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" />
 Merge sort is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the implementation preserves the input order of equal elements in the sorted output. Merge sort is a divide and conquer algorithm.
 Conceptually, a merge sort works as follows:
@@ -119,7 +119,7 @@ Time complexity analysis:
 |No|Yes|
 
 
-## Quick/partition-exchange Sort
+## 8 Quick/partition-exchange Sort
 <img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif" />
 Quicksort is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order. When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort.
 
@@ -136,7 +136,7 @@ Time complexity analysis:
 |Yes|No|
 
 
-## Radix Sort
+## 9 Radix Sort
 Radix sort is a non-comparative integer sorting algorithm that sorts data with integer keys by grouping keys by the individual digits which share the same significant position and value. A positional notation is required, but because integers can represent strings of characters (e.g., names or dates) and specially formatted floating point numbers, radix sort is not limited to integers.
 
 Time complexity analysis:
@@ -150,7 +150,7 @@ Time complexity analysis:
 |Depends on implementation|Depends on implementation|
 
 
-## Cocktail Sort (variation of Buble sort)
+## 10 Cocktail Sort (variation of Buble sort)
 The Bubble sort algorithm always traverses elements from left and moves the largest element to its correct position in first iteration and second largest in second iteration and so on. Cocktail Sort traverses through a given array in both directions alternatively.
 
 Time complexity analysis:
@@ -164,7 +164,7 @@ Time complexity analysis:
 |Yes|Yes|
 
 
-## Bogo/Permutation/Shotgun/Monkey Sort
+## 11 Bogo/Permutation/Shotgun/Monkey Sort
 <img align="center" height="200px" width="237px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Bogo_sort_animation.gif" />
 Also known as Stupid Sort/Slowsort, Bogosort randomly generates permutations of the input and checks if it is sorted until it generates one that happens to be sorted by chance. Not meant to be an efficient sort, Bogosort is largely used for educational purposes and for comparison to actual sorting algorithms for contrast. It has a best case of O(n) where the list is already sorted, an average performance of O((n+1)!) and an unbounded worst case performance.
 
@@ -180,7 +180,7 @@ Time complexity analysis:
 
 
 
-## Bozo Sort
+## 12 Bozo Sort
 Bozosort is somewhat similar to Bogosort in its random behaviour. It works by choosing two random elements of the list and swapping them, until the list is actually sorted.
 The running time analysis of a bozosort is difficult, but some estimates are found in H. O(n!) is found to be the expected average case. Considering that every iteration calls a function that checks if the list is ordered or not, that makes the average case actually O((n+1)!)
 
@@ -195,7 +195,7 @@ Time complexity analysis:
 |Yes|No|
 
 
-## Shell Sort
+## 13 Shell Sort
 <img align="center" height="200px" width="257px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/6/61/Sorting_shellsort_anim2.gif" />
 Shellsort is an in-place comparison sort. It can be seen as either a generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort).The method starts by sorting pairs of elements far apart from each other, then progressively reducing the gap between elements to be compared. Starting with far apart elements, it can move some out-of-place elements into position faster than a simple nearest neighbor exchange. Donald Shell published the first version of this sort in 1959.The running time of Shellsort is heavily dependent on the gap sequence it uses. For many practical variants, determining their time complexity remains an open problem.
 
@@ -210,7 +210,7 @@ Time complexity analysis:
 |Yes|No|
 
 
-## Introspective Sort (hybrid of quicksort and heapsort)
+## 14 Introspective Sort (hybrid of quicksort and heapsort)
 Introsort is a hybrid sorting algorithm that provides both fast average performance and (asymptotically) optimal worst-case performance. It begins with quicksort and switches to heapsort when the recursion depth exceeds a level based on (the logarithm of) the number of elements being sorted. This combines the good parts of both algorithms, with practical performance comparable to quicksort on typical data sets and worst-case O(n log n) runtime due to the heap sort. Since both algorithms it uses are comparison sorts, it too is a comparison sort.
 
 Time complexity analysis:
@@ -224,7 +224,7 @@ Time complexity analysis:
 |Yes|No|
 
 
-## Bucket Sort
+## 15 Bucket Sort
 Bucket sort is a sorting algorithm that involves first putting elements that need to be sorted into "buckets", sorting these buckets and then merging the results to get the sorted list.  It is best used on data that is uniformly distributed over a range and can perform quite well, O(n + m) (where n is the number of elements in the list and m is the number of buckets used).  The buckets are typically stored as an array of linked lists so there is an additional space requirement for this sorting algorithm.
 For example, if there is a list of numbers in the range 1 to 1000 we can have 10 buckets.  All numbers between 1 and 100 get added to the first bucket, between 101 and 200 get added to the second bucket, etc.  After all numbers have been added to the appropriate bucket insertion sort is applied to all the buckets.  This step is the bottleneck for the algorithm.  If the data is not clustered tightly than the sorts can be completed in linear time despite the fact that insertion sort is O(n<sup>2</sup>). The algorithm degrades as certain buckets get more of the numbers, the worst case being when all the numbers are in a single bucket.  The data in the input array must uniformly distributed across the range of bucket values to avoid the polynomial time.  The size of each bucket should be equal to the number of buckets.  As bucket sort is polynomial in the worse case Quicksort is a more optimal sorting algorithm.
 
@@ -239,7 +239,7 @@ Time complexity analysis:
 |Yes|Yes|
 
 
-## Gnome sort (similar to insertion sort)
+## 16 Gnome sort (similar to insertion sort)
 <img align="center" height="200px" width="320px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Gnome_Sort_Animation.gif" />
 Gnome sort is a sorting algorithm which is similar to insertion sort, except that moving an element to its proper place is accomplished by a series of swaps, similar to a bubble sort. It is conceptually simple, requiring no nested loops. The average, or expected, running time is O(n2) but tends towards O(n) if the list is initially almost sorted.
 
@@ -256,7 +256,7 @@ Time complexity analysis:
 |Yes|Yes|
 
 
-## Comb sort (Improved bubble sort)
+## 17 Comb sort (Improved bubble sort)
 <img align="center" height="200px" width="350px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Comb_sort_demo.gif" />
 The basic idea is to eliminate turtles, or small values near the end of the list, since in a bubble sort these slow the sorting down tremendously. Rabbits, large values around the beginning of the list, do not pose a problem in bubble sort.
 
@@ -279,7 +279,7 @@ Time complexity analysis:
 |Yes|No|
 
 
-## Tim sort (hybrid of mergesort and insertion sort)
+## 18 Tim sort (hybrid of mergesort and insertion sort)
 
 Timsort is a hybrid stable sorting algorithm, derived from merge sort and insertion sort, designed to perform well on many kinds of real-world data. It uses techniques from Peter McIlroy's "Optimistic Sorting and Information Theoretic Complexity", in Proceedings of the Fourth Annual ACM-SIAM Symposium on Discrete Algorithms, pp. 467–474, January 1993. It was implemented by Tim Peters in 2002 for use in the Python programming language. The algorithm finds subsequences of the data that are already ordered, and uses that knowledge to sort the remainder more efficiently. This is done by merging an identified subsequence, called a run, with existing runs until certain criteria are fulfilled. Timsort has been Python's standard sorting algorithm since version 2.3. It is also used to sort arrays of non-primitive type in Java SE 7, on the Android platform, and in GNU Octave.
 
@@ -294,7 +294,7 @@ Time complexity analysis:
 |No|Yes|
 
 
-## Tournament sort (Improved selection sort)
+## 19 Tournament sort (Improved selection sort)
 
 Tournament sort improves upon the naive selection sort by using a priority queue to find the next element in the sort. In the naive selection sort, it takes O(n) operations to select the next element of n elements; in a tournament sort, it takes O(log n) operations (after building the initial tournament in O(n)). Tournament sort is a variation of heapsort.
 
@@ -318,7 +318,7 @@ Merge: https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/Merge.java.htm
 For other sorting and searching algorithms: https://algs4.cs.princeton.edu/code/
 
 
-## Bitonic Merge Sort
+## 20 Bitonic Merge Sort
 The Bitonic Sort is a parallel comparison-based sorting algorithm which does O(nlogn) comparisons. The Bitonic Sort is based on the concept of converting the given sequence into a Bitonic Sequence. A Bitonic Sequence is a sequence of numbers which is first strictly increasing then after a point strictly decreasing. Although, the number of comparisons are more than that in any other popular sorting algorithm, It performs better for the parallel implementation because elements are compared in predefined sequence which must not be depended upon the data being sorted. The predefined sequence is called Bitonic sequence. Therefore it is suitable for implementation in hardware and parallel processor array.
 
 Time complexity analysis:
@@ -332,7 +332,7 @@ Time complexity analysis:
 |Yes|No|
 
 
-## Pancake Sort
+## 21 Pancake Sort
 Pancake sorting is the colloquial term for the mathematical problem of sorting a disordered stack of pancakes in order of size when a spatula can be inserted at any point in the stack and used to flip all pancakes above it. A pancake number is the minimum number of flips required for a given number of pancakes.
 Unlike a traditional sorting algorithm, which attempts to sort with the fewest comparisons possible, the goal is to sort the sequence in as few reversals as possible.
 
@@ -346,13 +346,15 @@ Time complexity analysis:
 |---|---|
 |No|No|
 
-## Stooge Sort
+## 22 Stooge Sort
 <img align="center" height="200px" width="344px" alt="GIF" src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Sorting_stoogesort_anim.gif" />
 The Stooge sort is a recursive sorting algorithm. It is defined for ascending order sorting. Stooge sort is a recursive sorting algorithm. It is notable for its exceptionally bad time complexity of O(n^(log 3 / log 1.5 ) = O(n2.7095...). The running time of the algorithm is thus slower compared to reasonable sorting algorithms, and is slower than Bubble sort, a canonical example of a fairly inefficient sort. It is however more efficient than Slowsort
 
-## 3 Way Merge Sort
+## 23 Three-Way Merge Sort
 Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.
 Merge sort recursively breaks down the arrays to subarrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.
+
+## 24 Pigeonhole sort
 
 ## Contributing
 To start contributing, check out [CONTRIBUTING.md](https://github.com/diptangsu/Sorting-Algorithms/blob/master/CONTRIBUTING.md). New contributors are always welcome to support this project.
